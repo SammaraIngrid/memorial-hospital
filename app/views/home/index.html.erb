@@ -27,6 +27,13 @@
           <li>
             <%= link_to("Contatos", root_path, class: 'item') %>
           </li>
+          <li>
+            <% if current_user.present? %>
+              <%= current_user.email %> (<%= link_to('Sair', destroy_user_session_path, method: :destroy) %>)
+            <% else %>
+              <%= link_to("Login", new_user_session_path, class: 'item') %>
+            <% end %>
+          </li>
         </ul>
       </div>
     </section>
