@@ -13,8 +13,8 @@
  *= require_tree .
  *= require_self
  */
-
-body {
+ 
+ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -53,4 +53,102 @@ a:hover {
 
 .carousel-inner {
   height: 500px;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  .menu .list {
+    flex-direction: column;
+  }
+
+  .item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.login-container h2 {
+  color: #333;
+}
+
+.login-container .field {
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-container .actions {
+  margin-top: 20px;
+}
+
+.login-container .actions input {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-container .actions input:hover {
+  background-color: #45a049;
+}
+
+.login-container .links {
+  margin-top: 10px;
+  color: #777;
+}
+
+.login-container a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
 }
