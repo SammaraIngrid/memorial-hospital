@@ -13,8 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
- body {
+body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -56,7 +55,7 @@ a:hover {
 }
 
 footer {
-  background-color: #333333;
+  background-color: #0f466f;
   color: white;
   padding: 10px;
   text-align: center;
@@ -92,7 +91,7 @@ footer {
 }
 
 .login-container {
-  background-color: #fff;
+  background-color: #0f466f;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -104,7 +103,7 @@ footer {
 }
 
 .login-container h2 {
-  color: #333;
+  color: #ddd;
 }
 
 .login-container .field {
@@ -114,7 +113,7 @@ footer {
 .login-container label {
   display: block;
   margin-bottom: 8px;
-  color: #555;
+  color: #3498db;
 }
 
 .login-container input {
@@ -151,4 +150,83 @@ footer {
 
 .login-container a:hover {
   text-decoration: underline;
+}
+
+.sign-up-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #0f466f;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up-container h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.sign-up-container .field {
+  margin-bottom: 20px;
+}
+
+.sign-up-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #3498db;
+}
+
+.sign-up-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sign-up-container .actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sign-up-container .actions input {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sign-up-container .actions input:hover {
+  background-color: #45a049;
+}
+
+#error_explanation {
+  color: #ff0000;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.field_with_errors input {
+  border-color: #ff0000;
+}
+
+.links {
+  margin-top: 10px;
+  text-align: center;
+  color: #777;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
 }
