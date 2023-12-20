@@ -1,0 +1,2 @@
+class CryptoPayment < ApplicationRecord
+end
